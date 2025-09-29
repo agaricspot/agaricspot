@@ -1,9 +1,23 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.header{
+    background-color: white;
+    padding-top: 20px;
+}
 h1{
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 50px;
-    color: #000000;
-    margin-bottom: 5px;
+    color: #000000;    
 }
 h2{
     text-align: center;
@@ -14,7 +28,6 @@ h2{
 }
 ul{
     list-style-type: none;
-    margin: 5px;
     padding: 5px;
     overflow: hidden;
     background-color: #FFFFFF;
@@ -40,34 +53,32 @@ ul li a{
 ul li a:hover{
     background-color: #f2f2f2;
 }
+body{
+    background-color: #d7d7d7;
+}
 
 .slideshow-container {
     max-width: 100%;
-    min-width:0px;
+    max-height: 450px;
     position: relative;
-    margin: auto;
-    background-color: #4e4e4e;
+    background-color: #858585;
    
 }
 .mySlides {
     display: none;
-    height: 100%;
-    width: 100%;
 }
 
-img{
+.mySlides > img{
     height: 450px;
     width: 100%;
     object-fit: contain;
-
 }
 
 .prev, .next{
     cursor:pointer;
     position:absolute;
-    top:50%;
-    width:auto;
-    margin: top -30px;
+    top:45%;
+    width:inherit;
     padding: 16px; 
     color: white;
     font-weight: bold;
@@ -90,11 +101,14 @@ img{
     position:absolute;
     top:0;
 }
+
 .dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin:0 2px;
+    margin-top:10px;
+    margin-bottom: 10px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -110,4 +124,11 @@ img{
 @keyframes fade{
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.about{
+    border:black; 
+    border-width: 5px;
+    border-style: solid;
+
 }
